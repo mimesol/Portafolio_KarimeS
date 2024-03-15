@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=derice-width, inicial-scale=1.0">
+        <title>
+            Formulario de Registro
+        </title>
+        <style>
+            body{
+                background-color: #e9eff1;
+            }
+
+            .cuadro{
+                background-color: white;
+                margin-top: 20px;
+                padding: 15px;
+                padding-top: 15px;
+                padding-left: 25px;
+                margin-left: 30%;
+                margin-right: 30%;
+                border: 1px solid rgb(211, 217, 228);
+                border-radius: 12px;
+                box-shadow: 1px 3px 2px 0 #4c585d;
+            }
+
+            #titulo{
+                color: black;
+                font-family:'Lucida Sans Unicode';
+                font-weight: 100px;
+                font-style: inherit;
+                text-align: center;
+            }
+
+            .box{
+                background-color: white;
+                width: 96%;
+                height: 30px;
+                border: 1px solid rgb(211, 217, 228);
+                border-radius: 5px;
+            }
+            .btn{
+                width: 80px;
+                height: 35px;
+                border: none; 
+                color: white;  
+                cursor: pointer; 
+                border-radius: 5px;
+                background-color: #007bff;
+            }
+            .btn:hover{
+                background: #0b7dda;
+            }
+
+            .linea{
+                background-color: rgb(0, 0, 0);
+                width: 1450px;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1 id="titulo">
+                Formulario de Registro
+            </h1>
+            <div class="cuadro">
+                <h2>
+                    Nombre:
+                </h2>
+                <form action="">
+                    <input type="text" id="nombre" name="nombre" class="box">
+                </form>
+                <h2>
+                    Teléfono:
+                </h2>
+                <form action="">
+                    <input type="tel"  id="telefono" pattern="[0-9]{3}-[0-9]{4}" class="box">
+                </form>
+                <h2>
+                    Correo electrónico:
+                </h2>
+                <form action="">
+                    <input type="email" id="correoElectronico" name="correoElectronico" class="box">
+                </form>
+                <h2>
+                    Escuela:
+                </h2>
+                <form action="">
+                    <select id="esc" name="esc" class="box" onchange="OtraEsc()">
+                        <option>Seleccionar...</option>
+                        <option>Cecytem</option>
+                        <option>Conalep</option>
+                        <option>Cetmar</option>
+                        <option value="escuelaotra">Otra escuela</option>
+                    </select>
+                </form>
+                
+                <div id="bloqueo-esc" style="display: none;">
+                    <h2>
+                        Nombre de la nueva escuela:
+                    </h2>
+                        <input id="esc" type="text" name="esc" class="box">
+                </div>1
+
+                <h2>
+                    Carrera:
+                </h2>
+                <form action="">
+                    <select id="car" name="car" class="box" onchange="OtraCar()">
+                        <option>Seleccionar...</option>
+                        <option>Software</option>
+                        <option>Ambiental</option>
+                        <option>Mecatrónica</option>
+                        <option>Logistica</option>
+                        <option value="carreraotra">Otra carrera</option>
+                    </select>
+                </form>
+                <div id="bloqueo-car" style="display: none;">
+                    <h2>
+                        Nombre de la nueva carrera:
+                    </h2>
+                        <input id="car" type="text" name="car" class="box">
+                </div>
+                <br>
+                <button class="btn boton" onclick="DatosGuardados()">Enviar</button>
+            </div>
+        </div>
+        <div>
+            <h3>
+                Karime Lizeth Sánchez Ortega
+            </h3>
+        </div>
+        <div class="linea"></div>
+        <div id="DatosAlmacenados">
+        </div>
+        <script>
+            function OtraEsc(){
+                var seleccionar = document.getElementById('esc').value;
+                if(seleccionar === 'escuelaotra'){
+                    document.getElementById('bloqueo-esc').style.display = 'block';
+                }else{
+                    document.getElementById('bloqueo-esc').style.display = 'none';
+                }
+            }
+
+            function OtraCar(){
+                var seleccionar = document.getElementById('car').value;
+                if(seleccionar === 'carreraotra'){
+                    document.getElementById('bloqueo-car').style.display = 'block';
+                }else{
+                    document.getElementById('bloqueo-car').style.display = 'none';
+                }
+            }
+
+            function DatosGuardados(){
+                var nom = document.getElementById('nombre').value;
+                var ce = document.getElementById('correoElectronico').value;
+                var tel = document.getElementById('telefono').value;
+                var escu = document.getElementById('esc').value;
+                var carr = document.getElementById('car').value;
+
+                if(nom && ce && tel && escu && carr){
+                    var guardar = document.getElementById('DatosAlmacenados');
+                    guardar.innerHTML = "<h2>Datos Guardados: </h2><p>Nombre: "+nom+"</p><p>Correo electronico: "+ce+"</p><p>Telefono: "+tel+"</p><p>Escuela: "+escu+"</p><p>Carrera: "+carr+"</p>";
+                }else{
+                    alert("¡Datos Incompletos!");
+                }
+            }
+
+        </script>
+    </body>
+</html>
