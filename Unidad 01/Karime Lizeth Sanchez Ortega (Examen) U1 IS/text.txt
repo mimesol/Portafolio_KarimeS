@@ -1,0 +1,16 @@
+#58978A
+#474747
+#
+
+Programación web
+¡Da un paso adelante en tu carrera de Ingeniería de Software y sumérgete en el emocionante mundo de la Programación Web en UPLC! Nuestra materia de Programación Web ofrece una experiencia de aprendizaje dinámica y práctica, diseñada para equiparte con las habilidades esenciales para el desarrollo de aplicaciones web de vanguardia.
+
+
+¿Qué Aprenderás?
+Desarrollo Frontend: Aprenderas  HTML, CSS y JavaScript para crear interfaces web atractivas e interactivas.
+Frameworks Modernos: Explora frameworks populares como React.js y Vue.js para simplificar el desarrollo y mejorar la eficiencia
+Integración Backend: Conéctate con bases de datos, servidores para construir aplicaciones web completas y funcionales.
+Diseño Responsivo: Aprende a crear sitios web que se adapten perfectamente a cualquier dispositivo, desde computadoras de escritorio hasta dispositivos móviles.
+
+Programación web
+La mayoría de las empresas y organizaciones tienen una presencia en línea a través de sitios web y aplicaciones. La programación web permite crear y mantener estas plataformas digitales, proporcionando a las empresas una forma eficaz de llegar a su audiencia y ofrecer servicios en línea.

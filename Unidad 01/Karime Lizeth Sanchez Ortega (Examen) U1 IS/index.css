@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(228, 246, 246);
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li{
+    margin: 20px;
+    position: relative;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    color: black;
+    width: 100px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+nav a:hover{
+    color: aliceblue;
+    background-color: rgb(82, 165, 138);
+}
+
+.elem01{
+    margin: 50px;
+    padding: 30px;
+}
+
+#esp{
+    width: 100px;
+}
+
+#box{
+    background-image: url(fondo.png);
+    
+}
+
+selection{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+article{
+    flex: 2;
+}
+
+aside{
+    flex: 2;
+}
+
+#titulo{
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-transform:none;
+    font-weight: 500;
+    font-style:unset;
+    text-align: center;
+}
+
+#esp2{
+    margin: 30px;
+}
+
+h2{
+    color: rgb(82, 165, 138);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+#lt{
+    color: rgb(82, 165, 138);
+    font-style: unset;
+    display: inline-block;
+}
+
+#pp{
+    display: inline-table;
+}
+
+#ins{
+    background-color: rgb(82, 165, 138);
+    margin: 100px;
+    padding: 50px;
+    border-radius: 50px;
+    color: rgb(228, 246, 246);
+}
+
+h3{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+}
+
+#colorfo{
+    background-image: url(vector1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+
+}
+
+#foto{
+    background-image: url(fondo.png);
+    margin: 200px;
+    padding: 200px;
+    border-radius: 1000px;
+}
+
+#color03{
+    color: rgb(228, 246, 246);
+    text-shadow: 5px 10px 10px rgb(56, 60, 68);
+}
+
+#p1{
+    margin: 30px;
+    padding: 30px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(76, 90, 86);
+    padding: 30px;
+}
+
+footer div{
+    flex: 1;
+}
+
+#p2{
+    margin-left: 180px;
+}

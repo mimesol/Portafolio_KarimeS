@@ -1,0 +1,118 @@
+body{
+    background-color: rgb(220, 221, 241);
+    margin: 250;
+    padding: 100;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
+}
+
+header, nav{
+    flex: 1;
+}
+
+
+selection{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+article{
+    flex: 2;
+}
+
+aside{
+    flex: 2;
+    background-color: #93b1ed;
+}
+
+
+#titulo{
+    color: rgb(210, 220, 240);
+    font-family:'Lucida Sans Unicode';
+    font-size: 30px;
+    text-transform:none;
+    font-weight: 500;
+    font-style:unset;
+    text-align: center;
+
+}
+
+.box{
+    background-color: rgb(87, 103, 227);
+    width: 50%;
+    height: 30px;
+    border: 1px solid rgb(82, 90, 104);
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.btn{
+    margin: 15px;
+    border: none; 
+    color: white; 
+    padding: 70px 100px; 
+    cursor: pointer; 
+    border-radius: 25px;
+    width: 350px; 
+    font-size: 30px;
+    background-color: #007bff;
+}
+.btn:hover{
+    background: #0b7dda;
+}
+
+
+.linea{
+    background-color: rgb(255, 255, 255);
+    width: 1450px;
+    border: 1px solid rgb(196, 204, 221);
+}
+
+#margen{
+    margin: 30px;
+    padding-left: 30px;
+}
+
+.imag{
+    background-image: url(IMG/img02.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+h2{
+    color: rgb(64, 66, 181);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+p{
+    font-size: 25px;
+}
+
+#pp{
+    font-style: oblique;
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 27px;
+}
+
+.elemento{
+    width: 150px;
+    height: 150px;
+    transition: background-color 5s ease, height 2s ease, width 2s ease;
+}
+.elemento:hover{
+    height: 200px;
+    width: 200px;
+}
+
+ol{
+    font-size: 35px;
+    padding-left: 350px;
+}
