@@ -1,0 +1,36 @@
+<?php
+echo "<!DOCTYPE html>\n";
+echo "<html lang=\"en\">\n";
+echo "    <head>\n";
+echo "        <meta charset=\"UTF-8\">\n";
+echo "        <meta name=\"viewport\"\n";
+echo "        content=\"width=derice-width, inicial-scale=1.0\">\n";
+echo "        <title>Portafolio: Karime Lizeth Sánchez Ortega</title>\n";
+echo "        <link rel=\"stylesheet\" href=\"index.css\">\n";
+echo "    </head>\n";
+echo "    <body>\n";
+echo "        <div id=\"margen\">\n";
+echo "            <div>\n";
+echo "                <a href=\"Portafolio.php\">\n";
+echo "                    <img src=\"IMG/flecha.png\" class=\"elemento\">\n";
+echo "                </a>\n";
+echo "            </div>\n";
+echo "            \n";
+echo "            <div>\n";
+echo "                <ol>\n";
+echo "                    <li>\n";
+echo "                        <a href=\"Unidad 03/01_Saludar.php\">\n";
+echo "                            Saludar\n";
+echo "                        </a>\n";
+echo "                    </li>\n";
+echo "                    <li>\n";
+echo "                        <a href=\"Unidad 03/02_01_Formulario.php\">\n";
+echo "                            Formulario\n";
+echo "                        </a>\n";
+echo "                    </li>\n";
+echo "                    \n";
+echo "            </div>\n";
+echo "        </div>\n";
+echo "    </body>\n";
+echo "</html>\n";
+?>
